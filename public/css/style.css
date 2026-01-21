@@ -1,0 +1,123 @@
+/* Custom Styles for Sinarmas Agri Business */
+
+/* Navbar Styles */
+#navbar {
+  background-color: transparent;
+}
+
+#navbar.scrolled {
+  background-color: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+#brand-logo {
+  color: white;
+}
+
+#navbar.scrolled #brand-logo {
+  color: #111827;
+}
+
+.nav-link {
+  color: white;
+}
+
+#navbar.scrolled .nav-link {
+  color: #374151;
+}
+
+#navbar.scrolled .nav-link:hover {
+  color: #16a34a;
+}
+
+.nav-link:hover {
+  color: #86efac;
+}
+
+#mobile-menu-btn {
+  color: white;
+}
+
+#navbar.scrolled #mobile-menu-btn {
+  color: #111827;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #16a34a;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #15803d;
+}
+
+#navbar.scrolled .btn-primary {
+  background-color: #16a34a;
+  color: white;
+}
+
+#navbar.scrolled .btn-primary:hover {
+  background-color: #15803d;
+}
+
+#navbar:not(.scrolled) .btn-primary {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 2px solid white;
+}
+
+#navbar:not(.scrolled) .btn-primary:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure sections have proper padding-top for fixed navbar */
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+/* Animation keyframes */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0) translateX(-50%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(-25%) translateX(-50%);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 2s infinite;
+}
+
+/* Image hover effects */
+img {
+  transition: transform 0.3s ease;
+}
+
+/* Ensure proper spacing and readability */
+body {
+  line-height: 1.6;
+}
+
+/* Focus styles for accessibility */
+a:focus,
+button:focus {
+  outline: 2px solid #16a34a;
+  outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+  nav,
+  footer {
+    display: none;
+  }
+}
